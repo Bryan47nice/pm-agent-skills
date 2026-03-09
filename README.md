@@ -1,1 +1,1 @@
-使用AI快速完成PM任務
+PM Agent Pipeline - 從 Idea 到 RD Handoff 的標準化流程
