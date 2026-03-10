@@ -101,5 +101,5 @@ bash uninstall.sh          # 移除所有已安裝的 Skills
 
 ---
 
-**維護者：** Bryan47nice  
+**維護者：** 47  
 **授權：** MIT
