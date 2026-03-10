@@ -1,5 +1,5 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  
   "name": "pm-agent-skills",
   "version": "1.0.0",
   "description": "PM Agent Pipeline - 從 Idea 到 RD Handoff 的標準化產品開發流程",
