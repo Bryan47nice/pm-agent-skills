@@ -22,7 +22,7 @@ NC='\033[0m' # No Color
 
 # ── Config ───────────────────────────────────────────────────
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GLOBAL_COMMANDS_DIR="$HOME/.claude/commands"
+GLOBAL_COMMANDS_DIR="/mnt/c/Users/bryan/.claude/commands"
 LOCAL_COMMANDS_DIR="$(pwd)/.claude/commands"
 MODE="global"
 
