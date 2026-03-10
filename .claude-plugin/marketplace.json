@@ -1,0 +1,61 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pm-agent-skills",
+  "version": "1.0.0",
+  "description": "PM Agent Pipeline - 從 Idea 到 RD Handoff 的標準化產品開發流程",
+  "owner": {
+    "name": "47",
+    "email": "bryan472017@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "idea-interviewer",
+      "description": "透過蘇格拉底式提問,把模糊的產品想法逼出具體答案,產出標準化的 Idea Brief + Persona",
+      "source": "./skills/idea-interviewer",
+      "category": "pm-workflow",
+      "version": "1.0.0"
+    },
+    {
+      "name": "prd-builder",
+      "description": "將 Idea Brief 和 Persona 展開為完整的 User Stories 清單與 PRD 文件",
+      "source": "./skills/prd-builder",
+      "category": "pm-workflow",
+      "version": "1.0.0"
+    },
+    {
+      "name": "challenger",
+      "description": "批判性審查工具,透過不同視角參數挑戰產品文件的品質與完整性(可複用於競品分析、PRD Review、Design Review、Architecture Review)",
+      "source": "./skills/challenger",
+      "category": "review-tools",
+      "version": "1.0.0"
+    },
+    {
+      "name": "flow-mapper",
+      "description": "從 PRD 產生 Sitemap、User Flow 和 Page Inventory,建立完整的資訊架構",
+      "source": "./skills/flow-mapper",
+      "category": "design-tools",
+      "version": "1.0.0"
+    },
+    {
+      "name": "prototyper",
+      "description": "將 Sitemap、User Flow 和 Page Inventory 漸進式生成為可互動的原型",
+      "source": "./skills/prototyper",
+      "category": "design-tools",
+      "version": "1.0.0"
+    },
+    {
+      "name": "architect",
+      "description": "從產品角度提出技術方向建議供 RD 團隊參考,包含技術約束、方向偏好、概念資料模型和第三方服務需求",
+      "source": "./skills/architect",
+      "category": "pm-workflow",
+      "version": "1.0.0"
+    },
+    {
+      "name": "component-naming-skill",
+      "description": "協助團隊根據字根字首規範來命名 APP 元件,會載入字根字首表並提供符合規範的命名建議",
+      "source": "./skills/component-naming-skill",
+      "category": "design-tools",
+      "version": "1.0.0"
+    }
+  ]
+}

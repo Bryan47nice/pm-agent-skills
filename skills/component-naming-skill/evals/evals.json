@@ -1,0 +1,104 @@
+[
+  {
+    "id": 0,
+    "name": "基本命名-個股報價卡片",
+    "prompt": "我需要一個顯示個股即時報價的卡片元件,請幫我命名。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "必須先要求使用者提供字根字首表",
+      "建議的命名應包含 Card 前綴",
+      "命名中應包含 IndividualStock 或 Quote 相關字根",
+      "需要驗證命名符合順序規則",
+      "提供清楚的命名解析說明"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "複雜命名-可篩選的自選股導覽列",
+    "prompt": "我們要設計一個導覽列,用來顯示自選股列表,並且可以篩選特定條件的股票。請幫我命名這個元件。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "建議的命名應包含 NavBar 前綴",
+      "命名中應包含 PersonalSelection (自選股)",
+      "命名中應包含 Filter (篩選) 功能",
+      "驗證順序: NavBar → PersonalSelection → Filter",
+      "確認不違反唯一性規則"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "字根不足-持倉分析報告",
+    "prompt": "需要一個頁面來展示用戶的股票持倉分析報告,包含收益率、風險評估等資訊。請幫我命名。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "應該識別出「持倉」概念在字根表中不存在",
+      "應該識別出「分析報告」概念在字根表中不存在",
+      "提供新增字根的建議,包含分類、中文、英文、用途說明",
+      "建議的新字根應該是通用且可重用的",
+      "說明待字根加入後的建議命名"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "命名檢查-錯誤順序",
+    "prompt": "我們已經命名了一個元件叫 Filter_Container_PersonalSelection,請幫我檢查這個命名是否正確。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "應該指出順序錯誤",
+      "明確說明 Filter(功能) 不能在 Container(前綴) 之前",
+      "提供正確的命名建議: Container_PersonalSelection_Filter",
+      "解釋為什麼這樣修正"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "批量命名-三個元件",
+    "prompt": "我需要為以下三個元件命名:\n1. 一個顯示大盤走勢的圖表\n2. 一個可以編輯用戶暱稱的輸入框\n3. 一個顯示期貨報價的列表\n\n請一次性幫我命名這三個元件。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "應該為所有三個元件提供命名建議",
+      "第一個應包含 Chart 和 Market、Trend 相關字根",
+      "第二個應包含適當的輸入容器前綴和 Edit、Nickname",
+      "第三個應包含 List 和 Futures、Quote",
+      "使用表格或清單格式呈現結果"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "反向解析-解讀現有命名",
+    "prompt": "我們有一個元件叫 Table_Sector_PriceChange_Filter,請幫我解析這個命名代表什麼意思。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "正確識別 Table 為前綴(表格)",
+      "正確識別 Sector 為大類別(類股)",
+      "正確識別 PriceChange 為子類別(漲跌)",
+      "正確識別 Filter 為功能(篩選)",
+      "提供該元件用途的推測說明"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "同層多字根-複合功能",
+    "prompt": "需要一個卡片元件,同時顯示個股資訊和相關新聞,並且可以折疊。請命名。",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "命名應包含 Card 前綴",
+      "應該同時包含 IndividualStock 和 News 兩個大類別",
+      "應該包含 Collapse 功能",
+      "驗證同層級可以有多個字根(兩個大類別是允許的)",
+      "最終命名類似: Card_IndividualStock_News_Collapse"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "唯一性檢查-重複功能",
+    "prompt": "檢查這個命名: Row_Edit_Search_Filter,是否符合規範?",
+    "files": ["root_table.tsv"],
+    "expectations": [
+      "應該指出違反唯一性規則",
+      "說明 Edit、Search、Filter 都屬於「功能」分類",
+      "功能分類不能出現超過一次",
+      "建議選擇其中一個主要功能,或拆分成多個元件"
+    ]
+  }
+]

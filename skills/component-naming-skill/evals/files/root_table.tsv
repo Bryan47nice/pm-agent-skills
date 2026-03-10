@@ -1,0 +1,75 @@
+字根字首																			
+	中文	對應的英文	分類		中文	對應的英文	分類		中文	對應的英文	分類		中文	對應的英文	分類		中文	對應的英文	分類
+1	底部分頁容器	Container_Tab	前綴	1	作者	Author	大類別	1	漲跌	PriceChange	子類別	1	發布	Post	功能	1	加權指數	Twa00	詳細描述
+2	頁籤分頁容器	Container_TitlePager	前綴	2	blueprint	Blueprint	大類別	2	K線	KLine	子類別	2	切換	Switch	功能	2	櫃買	Twc00	詳細描述
+3	分頁容器	Container_Pager	前綴	3	啟動	Launch	大類別	3	相關	Related	子類別	3	編輯	Edit	功能	3	台指	Txf1	詳細描述
+4	靜態容器	Container_StaticPage	前綴	4	標題	Title	大類別	4	報價	Quote	子類別	4	篩選	Filter	功能	4	提示	Hint	詳細描述
+5	垂直捲動容器	Container_ScrollPage	前綴	5	個股	IndividualStock	大類別	5	走勢	Trend	子類別	5	刪除	Delete	功能	5	版本	填寫第幾版的數字 e.g. 2.0	詳細描述
+6	設定	Settings	前綴	6	自選股	PersonalSelection	大類別	6	分時明細	IntradayDetails	子類別	6	搜尋	Search	功能	6	國際指數	InternationalIndex	詳細描述
+7	頁	Page	前綴	7	策略	Strategy	大類別	7	最佳五檔	TopFiveOrders	子類別	7	使用	Using	功能	7	美股四大指數	US4	詳細描述
+8	工具列	Toolbar	前綴	8	大盤	Market	大類別	8	新聞	News	子類別	8	折疊	Collapse	功能	8	美股	USStock	詳細描述
+9	底部導覽列	TabBar	前綴	9	期貨	Futures	大類別	9	基本資料	BasicInfo	子類別	9	新增	Add	功能				
+10	導覽列	NavBar	前綴	10	類股	Sector	大類別	10	暱稱	Nickname	子類別	10	摺疊	Collapse	功能				
+11	欄	Column	前綴	11	用戶	Acount	大類別	11	報酬	Return	子類別	11	固定	Fixed	功能				
+12	列	Row	前綴	12	社團	Club	大類別	12	交易狀態	TradingStatus	子類別	12	客製	Customized	功能				
+13	展示板	Display	前綴	13	圖片	Image	大類別	13	樣本超額	SampleOverloaded	子類別	13	下單	Order	功能				
+14	圖表	Chart	前綴	14	內容專區	ContentSection	大類別	14	浮動	Floating	子類別	14	登入	LogIn	功能				
+15	副圖	區間	前綴	15	即時資訊組	RealTimeInfo	大類別	15	標籤	Tag	子類別	15	請求	Activate	功能				
+16	表格	Table	前綴	16	資訊	Info	大類別	16	基本	Basic	子類別	16	比較	Compare	功能				
+17	檔頭	Header	前綴	17	時間	Time	大類別	17	未實現損益	UnrealizedIncome	子類別	17	兌換	Redeem	功能				
+18	流水牆	WaterWall	前綴	18	新手導覽	BeginnerGuide	大類別	18	損益	RealizedIncome	子類別	18	影音直播	LiveStream	功能				
+19	頁面控制器	PagerController	前綴	19	客服	CustomerService	大類別	19	看盤	MarketWatch	子類別	19	播放器	Player	功能				
+20	卡片	Card	前綴	20	App評分	AppRating	大類別	20	(庫存)分布	PortfolioDistribution	子類別								
+21	觸發器	Trigger	前綴	21	分享	Sharing	大類別	21	縱向	Vertical	子類別								
+22	列表	List	前綴	22	用戶資訊	AccountDetails	大類別	22	橫向	Horizontal	子類別								
+23	看板	Board	前綴	23	系統設定	SystemSetting	大類別	23	指數	Index	子類別								
+24	專欄專區	ExclusiveColumnSection	前綴	24	用戶識別碼	Identifier	大類別	24	交集	Intersection	子類別								
+25	作者專區	AuthorSection	前綴	25	帳號管理	AccountManagement	大類別	25	指定標的	SelectedStock	子類別								
+26	社團專區	ClubSection	前綴	26	螢幕恆亮	ScreenBrightness	大類別	26	載入	Loading	子類別								
+27	內容專區	ContentSection	前綴	27	服務條款	TermsOfService	大類別	27	投資	Investment	子類別								
+28	文本	Text	前綴	28	隱私權政策	PrivacyPolicy	大類別	28	導覽	Guide	子類別								
+29	圖例	Legend	前綴	29	著作權政策	CopyrightPolicy	大類別	29	動態	Dynamic	子類別								
+30	轉盤	Roulette	前綴	30	登出	LogOut	大類別												
+31	按鈕	Button	前綴	31	跳轉	Redirect	大類別												
+32	訊息	Message	前綴	32	首登流程	FirstLoginProcess	大類別												
+33	彈窗	Popup	前綴	33	社團聊天室	ClubChatroom	大類別												
+34	跑馬燈	ScrollingMarquee	前綴	34	全文	Article	大類別												
+35	動畫	Animation	前綴	35	文章	Notes	大類別												
+36	空白區塊	SpaceBlock	前綴	36	通知	Noti	大類別												
+37	Webview	Webview	前綴	37	購買	Purchase	大類別												
+38	模板	Template	前綴	38	到價	PriceAlert	大類別												
+39	分隔器	Divider	前綴	39	單一	Single	大類別												
+40	顯示器	Indicator	前綴	40	圖片標題	ImageTitle	大類別												
+41	入口	Entrance	前綴	41	多個	Multi	大類別												
+42	計算機	Calculator	前綴	42	帶標	Label	大類別												
+43	發送器	Emitter	前綴	43	BarLine	BarLine	大類別												
+44	Allinone設定頁	Debug_Config	前綴	44	擴增	Augmented	大類別												
+45	影音專區	MediaSection	前綴	45	合併	Jointed	大類別												
+				46	免費	Free	大類別												
+				47	付費	VIP	大類別												
+				48	行銷	Marketing	大類別												
+				49	全圖	FullImage	大類別												
+				50	背景色	BackgroundColor	大類別												
+				51	Lottie	Lottie	大類別												
+				52	口袋證券	PocketSecurity	大類別												
+				53	CMoney	CMoney	大類別												
+				54	圓餅圖	Pie	大類別												
+				55	狀態	Status	大類別												
+				56	庫存	Inventory	大類別												
+				57	雷達	Radar	大類別												
+				58	評價	Evaluation	大類別												
+				59	樣本	Target	大類別												
+				60	區間	Interval	大類別												
+				61	訂閱管理	SubscriptionManagement	大類別												
+				62	語音聊天室	AudioChatroom	大類別												
+				63	水位	WaterLevel	大類別												
+				64	位階	Rank	大類別												
+				65	佔比	Proportion	大類別												
+				66	吐司	Toast	大類別												
+				67	散點	Scatter	大類別												
+				68	長條	Bar	大類別												
+				69	風險	Risk	大類別												
+				70	優惠碼	PromoCode	大類別												
+				71	事件	Events	大類別												
+				72	產業	Industry	大類別												
+				73	鏈	Chain	大類別												
