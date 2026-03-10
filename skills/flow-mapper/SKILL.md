@@ -1,6 +1,6 @@
 ---
 name: flow-mapper
-description: 將 PRD 轉化為 Sitemap、User Flow 和頁面清單。當使用者提到「畫流程圖」、「資訊架構」、「sitemap」、「user flow」、「頁面結構」、「導航設計」，或是拿著 PRD 想進入設計階段時，都應觸發此 Skill。如果使用者有 PRD 但還沒有頁面結構或流程圖，也應主動建議使用此流程。
+description: 從 PRD 產生 Sitemap、User Flow 和 Page Inventory
 ---
 
 # Flow Mapper

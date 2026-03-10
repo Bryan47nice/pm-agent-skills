@@ -1,6 +1,6 @@
 ---
 name: component-naming-skill
-description: 協助團隊根據字根字首規範來命名 APP 元件。會載入字根字首表,根據元件功能需求建議符合規範的命名,並在字根不足時提供新字根建議。適用於產品經理、UI/UX 設計師在設計新元件時使用。
+description: 根據字根字首規範協助命名 UI 元件
 ---
 
 # 元件命名 Skill

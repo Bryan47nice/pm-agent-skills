@@ -1,6 +1,6 @@
 ---
 name: prd-builder
-description: 將 Idea Brief 和 Persona 展開為完整的 User Stories 清單與 PRD 文件。當使用者提到「寫 PRD」、「展開需求」、「列 User Stories」、「需求文件」、「功能規格」，或是拿著 Idea Brief 想進入下一步時，都應觸發此 Skill。如果使用者有 Idea Brief 但還沒有 PRD，也應主動建議使用此流程。
+description: 從 Idea Brief 展開完整的 User Stories 和 PRD 文件
 ---
 
 # PRD Builder

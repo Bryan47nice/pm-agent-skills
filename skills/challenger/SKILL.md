@@ -1,6 +1,6 @@
 ---
 name: challenger
-description: 批判性審查工具，透過不同視角參數挑戰產品文件的品質與完整性。當使用者提到「幫我 review」、「檢查一下」、「挑戰這份文件」、「競品分析」、「設計審查」、「架構審查」、「覆盤」，或是拿著 PRD / 設計稿 / 架構文件想要被 challenge 時，都應觸發此 Skill。在 Pipeline 中複用於 P1-4（競品分析）、P1-5（PRD Review）、P2-4（Design Review）、P3-5（Architecture Review）、P6-4（Post-launch Review）。
+description: 多視角批判性審查產品文件,挑戰假設找出盲點
 ---
 
 # Challenger

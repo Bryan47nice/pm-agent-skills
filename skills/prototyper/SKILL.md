@@ -1,6 +1,6 @@
 ---
 name: prototyper
-description: 將 Sitemap、User Flow 和 Page Inventory 漸進式生成為可互動的原型。當使用者提到「做 wireframe」、「畫 prototype」、「做原型」、「UI 設計」、「做頁面」、「做畫面」，或是拿著資訊架構想進入 UI 設計階段時，都應觸發此 Skill。如果使用者有 Sitemap/User Flow 但還沒有可互動的原型，也應主動建議使用此流程。
+description: 從資訊架構漸進式生成可互動的 Wireframe 原型
 ---
 
 # Prototyper
