@@ -13,7 +13,9 @@
 
 ## 安裝步驟
 
-### 步驟一：安裝 WSL（Ubuntu）
+### Windows
+
+**步驟一：安裝 WSL（Ubuntu）**
 
 打開 **PowerShell**，執行：
 
@@ -23,7 +25,7 @@ wsl --install -d Ubuntu
 
 安裝完成後**重啟電腦**。重啟後開啟 Ubuntu，依提示設定帳號與密碼。
 
-### 步驟二：安裝 Skills
+**步驟二：安裝 Skills**
 
 打開 **Ubuntu**，執行以下三行：
 
@@ -33,9 +35,22 @@ cd pm-agent-skills
 bash install.sh
 ```
 
-### 步驟三：重啟 Claude Code
+---
 
-安裝完成後重啟 Claude Code，輸入 `/idea-interviewer` 測試是否成功。
+### Mac / Linux
+
+打開**終端機**，執行以下三行：
+
+```bash
+git clone https://github.com/Bryan47nice/pm-agent-skills.git
+cd pm-agent-skills
+bash install.sh
+```
+
+---
+
+安裝完成後**重啟 Claude Code**，輸入 `/idea-interviewer` 測試是否成功。
+
 
 ---
 
