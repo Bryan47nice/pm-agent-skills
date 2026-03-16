@@ -1,5 +1,4 @@
 # PM Agent Skills
-
 > 標準化的 PM 產品開發流程，從 Idea 到 RD Handoff
 > 安裝後可在 Claude Code 直接用 Slash Command 觸發每個階段的 AI 協作。
 
@@ -7,27 +6,32 @@
 
 ## 安裝需求
 - [Claude Code](https://claude.ai/code)
-- Windows 用戶需要 WSL（Ubuntu）— 因為 `install.sh` 是 bash 腳本，Windows 原生無法執行
 
 ---
 
 ## 安裝步驟
 
-### Windows
+### 方法一：下載 ZIP（推薦，最簡單）
 
-**步驟一：安裝 WSL（Ubuntu）**
+1. 點擊頁面右上角 **Code → Download ZIP**，解壓縮
+2. 將 `skills/` 資料夾內所有 `.md` 檔案複製到：
+   - **Windows：** `C:\Users\你的帳號\.claude\commands\`
+   - **Mac / Linux：** `~/.claude/commands/`
+3. 重啟 Claude Code
 
-打開 **PowerShell**，執行：
+---
+
+### 方法二：透過指令安裝（支援 `/pm-update` 自動更新）
+
+**Windows**
+
+打開 **PowerShell**，安裝 WSL（Ubuntu）：
 
 ```powershell
 wsl --install -d Ubuntu
 ```
 
-安裝完成後**重啟電腦**。重啟後開啟 Ubuntu，依提示設定帳號與密碼。
-
-**步驟二：安裝 Skills**
-
-打開 **Ubuntu**，執行以下三行：
+安裝完成後**重啟電腦**。重啟後開啟 Ubuntu，依提示設定帳號與密碼，再執行：
 
 ```bash
 git clone https://github.com/Bryan47nice/pm-agent-skills.git
@@ -35,11 +39,9 @@ cd pm-agent-skills
 bash install.sh
 ```
 
----
+**Mac / Linux**
 
-### Mac / Linux
-
-打開**終端機**，執行以下三行：
+打開**終端機**，執行：
 
 ```bash
 git clone https://github.com/Bryan47nice/pm-agent-skills.git
@@ -50,7 +52,6 @@ bash install.sh
 ---
 
 安裝完成後**重啟 Claude Code**，輸入 `/idea-interviewer` 測試是否成功。
-
 
 ---
 
@@ -67,6 +68,8 @@ bash install.sh
 | `/pages-checker` | 輔助 | 比對 PAGEs 系統相容性 |
 | `/component-naming-skill` | 輔助 | 元件命名建議 |
 | `/pm-update` | 維護 | 自動檢查並更新所有 Skills 到最新版本 |
+
+> 每個 Skill 的詳細使用說明與範例，請參考各自的 README（位於 `skills/` 資料夾內）。
 
 ---
 
@@ -90,14 +93,12 @@ bash install.sh
 
 ## 更新 Skills
 
-在 Claude Code 輸入：
-```
-/pm-update
-```
+**ZIP 安裝的用戶：** 重新下載 ZIP，將 `skills/` 內的 `.md` 檔案覆蓋貼上即可。
 
-Claude 會自動檢查 GitHub 是否有新版本，有的話直接 pull + 重裝，並回報哪些 Skills 被更新了。
+**指令安裝的用戶：** 在 Claude Code 輸入 `/pm-update`，Claude 會自動檢查並更新。
 
-或手動在 WSL 執行：
+或手動執行：
+
 ```bash
 cd pm-agent-skills
 git pull
@@ -119,13 +120,13 @@ bash uninstall.sh          # 移除所有已安裝的 Skills
 ## 常見問題
 
 **Q：輸入 `/idea-interviewer` 沒有反應？**
-請確認已重啟 Claude Code，且 WSL 安裝步驟有成功跑完（看到 ✓ installed）。
+請確認已重啟 Claude Code。ZIP 安裝請確認 `.md` 檔案已放到正確的 `.claude/commands/` 資料夾；指令安裝請確認看到 `✓ installed`。
 
-**Q：Mac / Linux 可以用嗎？**
-可以，直接執行 `bash install.sh` 即可，腳本會自動偵測環境。
+**Q：ZIP 安裝跟指令安裝有什麼差別？**
+功能完全相同。指令安裝的差別是可以使用 `/pm-update` 自動更新；ZIP 安裝需要手動重新下載覆蓋。
 
 **Q：如何只在特定專案使用某個 Skill？**
-在該專案資料夾執行 `bash install.sh --local`，會安裝到該專案的 `.claude/commands/`。
+在該專案資料夾執行 `bash install.sh --local`，或手動將 `.md` 檔案複製到該專案的 `.claude/commands/`。
 
 ---
 
