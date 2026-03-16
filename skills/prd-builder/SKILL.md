@@ -19,7 +19,7 @@ description: 從 Idea Brief 展開完整的 User Stories 和 PRD 文件
 Skill 啟動時，先確認手上有沒有必要的輸入文件：
 
 ### 情況 A：有 Idea Brief + Persona
-直接進入 Section A。
+直接進入輸入驗證 Step 2。
 
 ### 情況 B：只有口頭描述，沒有正式文件
 提醒使用者：
@@ -34,7 +34,22 @@ Skill 啟動時，先確認手上有沒有必要的輸入文件：
    - MVP 必須包含哪些功能？
 ```
 
-如果使用者選擇直接提供資訊，將其整理成簡版 Idea Brief 格式後再進入 Section A。
+如果使用者選擇直接提供資訊，將其整理成簡版 Idea Brief 格式後再進入 Step 2。
+
+### Step 2：確認外部合作 API 文件
+
+在展開 User Stories 前，主動詢問：
+
+```
+這個功能有沒有依賴外部合作方的 API 或內容授權？
+如果有，對方有沒有提供技術文件（API Doc、使用規範、合規要求）？
+
+有的話請提供，因為合規要求（例如強制顯示的聲明文字、資料刪除義務）
+會直接影響 User Stories 的內容和優先級，必須在展開前知道。
+```
+
+- 如果有文件：讀取後，將合規要求標記為 Must Have，技術限制補充到備註
+- 如果沒有文件：繼續進入 Section A，但在「技術限制與假設」中標註「⚠️ 外部 API 規範待確認」
 
 ## Section A：User Story Mapping
 
@@ -53,11 +68,15 @@ Skill 啟動時，先確認手上有沒有必要的輸入文件：
 ```markdown
 ### US-[編號]：[簡短標題]
 
-- **Story**：As a [Persona 名稱], I want to [動作], so that [效益].
+- **Story**：身為 [Persona 名稱]，我希望 [動作]，這樣 [效益]。
 - **優先級**：Must / Should / Could / Won't
 - **驗收條件（Acceptance Criteria）**：
-  1. Given [前提], When [動作], Then [預期結果]
-  2. Given [前提], When [動作], Then [預期結果]
+  1. Given [前提]
+     When [動作]
+     Then [預期結果]
+  2. Given [前提]
+     When [動作]
+     Then [預期結果]
 - **備註**：[任何補充說明，例如技術限制、相依性]
 ```
 
