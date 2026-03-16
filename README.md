@@ -6,15 +6,26 @@
 ---
 
 ## 安裝需求
-
-- Windows + WSL（Ubuntu）
 - [Claude Code](https://claude.ai/code)
+- Windows 用戶需要 WSL（Ubuntu）— 因為 `install.sh` 是 bash 腳本，Windows 原生無法執行
 
 ---
 
 ## 安裝步驟
 
-打開 **WSL**，執行以下三行：
+### 步驟一：安裝 WSL（Ubuntu）
+
+打開 **PowerShell**，執行：
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+安裝完成後**重啟電腦**。重啟後開啟 Ubuntu，依提示設定帳號與密碼。
+
+### 步驟二：安裝 Skills
+
+打開 **Ubuntu**，執行以下三行：
 
 ```bash
 git clone https://github.com/Bryan47nice/pm-agent-skills.git
@@ -22,7 +33,9 @@ cd pm-agent-skills
 bash install.sh
 ```
 
-安裝完成後，**重啟 Claude Code**，輸入 `/idea-interviewer` 測試是否成功。
+### 步驟三：重啟 Claude Code
+
+安裝完成後重啟 Claude Code，輸入 `/idea-interviewer` 測試是否成功。
 
 ---
 
